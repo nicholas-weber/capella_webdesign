@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/locations.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <span id="nav"></span>
+    <main>
+        <h1>Locations</h1>
+        <div id="locations">
+            <button onclick="getLocation()">Get current location</button>
+            <p id="response"></p>
+            <div id="map"></div>
+            <p id="vendor"></p>
+            <button id="offline-button" onclick="offlineLocation()">See offline list of closest vendors</button>
+            <p id="offline-location"></p>
+        </div>
+    </main>
+    <footer>
+        &#169; 2019-2020 Auto Co.
+    </footer>
+    <script src="js/locations.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2RApCANHY7HZ-Pu9rWKRoChI6Fcf-z8Q&callback=initMap">
+    </script>
+</body>
+
+</html>

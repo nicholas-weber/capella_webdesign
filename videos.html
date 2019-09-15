@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/videos.css">
+    <script src="js/scripts.js"></script>
+    <script src="js/videos.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <span id="nav"></span>
+    <main>
+        <h1>Videos</h1>
+        <div id="videos">
+            <div class="video" id="video1">
+                <span onclick="goToVideo3()">
+                    &larr;
+                </span>
+                <iframe src="https://www.youtube.com/embed/hPj-SPD_NIg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <span onclick="goToVideo2()">
+                    &rarr;
+                </span>
+            </div>
+            <div class="video" id="video2">
+                <span onclick="goToVideo1()">
+                    &larr;
+                </span>
+                <iframe src="https://www.youtube.com/embed/s6Z_GdBjzdY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <span onclick="goToVideo3()">
+                    &rarr;
+                </span>
+            </div>
+            <div class="video" id="video3">
+                <span onclick="goToVideo2()">
+                    &larr;
+                </span>
+                <iframe src="https://www.youtube.com/embed/cWGE6rD7zGI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <span onclick="goToVideo1()">
+                    &rarr;
+                </span>
+            </div>
+        </div>
+    </main>
+    <span id="footer"></span>
+</body>
+
+</html>

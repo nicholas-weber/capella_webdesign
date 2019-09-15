@@ -1,0 +1,56 @@
+p {
+    margin: 1rem;
+}
+
+form {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+    padding: .25rem;
+    font-size: 1.5rem;
+    color: #3366ff;
+    border: 2px solid #3366ff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#name, #email {
+    max-width: 350px;
+}
+
+#message {
+    width: 90%;
+}
+
+label {
+    margin-bottom: 1rem;
+}
+
+#drop {
+    border: 5px double #3366ff;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+#drop:hover {
+    background: #3366ff;
+    color: white !important;
+}
+
+#drop i {
+    font-size: 2rem;
+    color: #3366ff;
+}
+
+button {
+    max-width: 175px;
+}

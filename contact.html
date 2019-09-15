@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <script src="https://kit.fontawesome.com/f23bdefea4.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="jquery-validation/dist/jquery.validate.min.js"></script>
+    
+    <script src="form-validation.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <span id="nav"></span>
+    <main>
+        <h1>Contact Us</h1>
+        <p>
+            Thank you for your interest in contacting Auto Co. Use the input form below to compose your
+            message, and we'll get back to you as soon as we can.
+        </p>
+        <form action="contact" name="contact">
+            <input name="name" id="name" type="text" placeholder="Name">
+            <input name="email" id="email" type="text" placeholder="Email">
+            <input name="message" id="message" type="text" placeholder="Message">
+            <label>Use the drag-and-drop interface below to upload your image file.</label>
+            <div id="drop" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                <i class="fas fa-camera"></i>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <span id="footer"></span>
+    <script>
+        function dropHandler(ev) {
+            ev.preventDefault();
+            if (ev.dataTransfer.items) {
+                for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+                    if (ev.dataTransfer.items[i].kind === 'file') {
+                        var file = ev.dataTransfer.items[i].getAsFile();
+                        alert(file.name + " has been uploaded. Thank you!");
+                    }
+                }
+            } else {
+                for (var i = 0; i < ev.dataTransfer.files.length; i++) {
+                    alert("Invalid file.");
+                }
+            }
+        }
+        function dragOverHandler(ev) {
+            ev.preventDefault();
+        }
+    </script>
+</body>
+
+</html>

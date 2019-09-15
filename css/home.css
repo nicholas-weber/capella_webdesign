@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-logo {
+    max-width: 75%;
+}
+
+#home-header {
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around;
+}
+
+#buttons button {
+    width: 185px;
+    font-size: 1.25rem;
+    margin: 0 1rem;
+}
+
+@media screen and (max-width: 1025px) {
+    #home-logo {
+        margin-top: 25px;
+    }
+
+    #buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #buttons button {
+        width: 90%;
+        margin: 1rem 0;
+    }
+}

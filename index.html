@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/home.css">
+
+	<link rel="stylesheet" href="jquery-ui.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://kit.fontawesome.com/f23bdefea4.js"></script>
+
+	<script src="js/scripts.js"></script>
+	<script>
+		$(function () {
+			$("#dialog").dialog();
+		});
+	</script>
+</head>
+
+<body onload="onLoad()">
+	<span id="nav"></span>
+	<main>
+		<img src="images/logo.png" id="home-logo">
+		<img src="images/home-header.png" id="home-header">
+		<h2>"Keeping life moving."</h2>
+		<div id="buttons">
+			<button onclick="window.location.href='chemicals.html'">
+				<i class="fas fa-vial"></i>
+				Chemicals
+			</button>
+			<button onclick="window.location.href='equipment.html'">
+				<i class="fas fa-cogs"></i>
+				Equipment
+			</button>
+			<button onclick="window.location.href='lubricants.html'">
+				<i class="fas fa-tint"></i>
+				Lubricants
+			</button>
+			<button onclick="window.location.href='shop-supplies.html'">
+				<i class="fas fa-tools"></i>
+				Shop Supplies
+			</button>
+		</div>
+		<div id="dialog" title="Hi Europe!">
+			<img src="images/europe.png" id="home-logo" alt="">
+			<p>We use cookies. Deal with it.</p>
+		</div>
+	</main>
+	<span id="footer"></span>
+</body>
+
+</html>

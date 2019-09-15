@@ -1,0 +1,18 @@
+.header-img {
+    width: 100%;
+}
+
+button {
+    margin: 1rem;
+}
+
+h2 {
+    margin: 0;
+    color: #3366ff;
+    padding: 1rem;
+}
+
+p {
+    margin: 0;
+    padding: 0 1rem;
+}
